@@ -43,7 +43,7 @@ int revNumSq = revNum * revNum;
 return (revSq == revNumSq);
 }
 
-
+//Prime 
 int isPrime(int num) {
 if (num <= 1) return 0;
 for (int i = 2; i <= num-1; i++) {
@@ -54,8 +54,10 @@ return 1;
 }
 
 
+// PrimePalindrome
 int isPrimePalindrome(int num) {
 if (isPrime(num) && num == reverseDigits(num))
 return 1;
 return 0;
+
 }
